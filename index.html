@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
+    <nav class="flex">
+        <div class="nav-container flex">
             <div class="logo">
                 <img src="images/port-logo.png" alt="">
             </div>
@@ -25,15 +25,13 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Skills</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Experience</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="container flex">
         <div class="text-content">
             <div class="details">
                 <h1 class="greet" style="font-weight: 10;">Hello There 👋,</h1>
@@ -42,7 +40,7 @@
             <div class="interest">
                 <p class="interest-text" style="font-size: 1.3rem;">I'm into <span class="accent-blue">Web Development</span></p>
             </div>
-            <div class="socials">
+            <div class="socials flex">
                 <a class="social-links" href="https://github.com/biswabaibhab007"><i class="fa-brands fa-github"></i></a>
                 <a class="social-links" href="https://twitter.com/biswa_007"><i class="fa-brands fa-twitter"></i></a>
                 <a class="social-links" href="https://www.linkedin.com/in/biswa-baibhab-subudhi-31822122b"><i class="fa-brands fa-linkedin"></i></a>
@@ -60,10 +58,19 @@
         <div class="heading">
             <h3>About me</h3>
         </div>
-        <div class="about-content">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ducimus tempore eius consequuntur eos itaque nisi mollitia provident voluptatum aperiam beatae, eaque laborum voluptatem debitis omnis quos impedit odio aliquam, maxime officiis nemo commodi sequi voluptatibus. Debitis adipisci, laboriosam commodi aliquam aut autem eius in repellendus impedit nam repellat natus soluta! Accusantium consequatur harum molestias, illum ex beatae ab. Error esse sed officiis sequi illo est tenetur architecto quae.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore doloremque, fugit vitae quis dolorum error quo minima nesciunt. Excepturi itaque, repellendus exercitationem quam ullam cupiditate ium. Animi debitis officiis pariatur tempore quos, ratione quasi doloribus quas accusantium libero. Labore autem illum necessitatibus. Nulla sapiente consequatur aspernatur eius praesentium, corrupti est, voluptates commodi a distinctio sint!
-            </p>
+        <div class="about-content flex">
+            <!-- <div class="about-pic">
+                <img src="images/about-asset.jpg" alt="picture">
+            </div> -->
+            <div class="text-content">
+                <h4>I'm a Front End Developer from Odisha, India</h4>
+                <p>
+                    I'm an <span class="accent-blue">IT undergrad at OUTR Bhubaneswar</span> currently learning web dev. I'm very passionate about developing websites and webapps. I enjoy building the frontend and designing process. Being a self-taught developer I always work on my coding skills to make them better. Also I'm a quick learner and a team player. I'm a very optimistic person and is always eager to take up new challenges. Being a creative person and I always try to think out of the box. I'm a very hardworking person and always try to give my best in whatever I do.
+                </p>
+                <div class="btn flex">
+                    <a class="primary-btn" href="https://youtube.com">Resume</a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -72,12 +79,48 @@
         <div class="heading">
             <h3>Skills</h3>
         </div>
-        <div class="skills-content">
+        <div class="skills-content flex">
+            <div class="sk-cont flex skill-img">
+                <i class="fa-solid fa-code"></i>
+                <span class="skill-name">HTML</span>
+            </div>
+            <div class="sk-cont flex skill-img">
+                <i class="fa-brands fa-css3-alt"></i>
+                <span class="skill-name">CSS</span>
+            </div>
+            <div class="sk-cont flex skill-img">
+                <i class="fa-brands fa-js-square"></i>
+                <span class="skill-name">JavaScript</span>
+            </div>
+            
+            <div class="sk-cont flex skill-img">
+                <i class="fa-brands fa-bootstrap"></i>
+                <span class="skill-name">Bootstrap</span>
+            </div>
+            <div class="sk-cont flex skill-img">
+                <i class="fa-brands fa-java"></i>
+                <span class="skill-name">Java</span>
+            </div>
+            <div class="sk-cont flex skill-img">
+                <i class="fa-brands fa-python"></i>
+                <span class="skill-name">Python</span>
+            </div>
 
-        </div>
+            <div class="sk-cont flex skill-img">
+                <i class="fa-brands fa-c"></i>
+                <span class="skill-name">C</span>
+            </div>
+            <div class="sk-cont flex skill-img">
+                <i class="fa-brands fa-git-alt"></i>
+                <span class="skill-name">Git</span>
+            </div>            
+            <!-- <div class="sk-cont">
+                <i class="fa-brands fa-github"></i>
+                <span>Github</span>
+            </div> -->
     </div>
 
-    <!-- EDUCATION SECTION -->
+    <!-- EDUCATION SECTION
     <div class="edu-container">
         <div class="heading">
             <h3>Education</h3>
@@ -85,9 +128,9 @@
         <div class="edu-content">
 
         </div>
-    </div>
+    </div> -->
 
-    <!-- EXPERIENCE SECTION -->
+    <!-- EXPERIENCE SECTION
     <div class="exp-container">
         <div class="heading">
             <h3>Experience</h3>
@@ -95,7 +138,7 @@
         <div class="exp-content">
 
         </div>
-    </div>
+    </div> -->
 
     <!-- PROJECTS SECTION -->
     <div class="proj-container">
@@ -118,8 +161,8 @@
     </div>
 
     <!-- FOOTER SECTION -->
-    <footer>
-        <p>Made with ❤️ by BISWA</p>
+    <footer class="flex">
+        <p>Made with ❤️ by <a href="https://www.linkedin.com/in/biswa-baibhab-subudhi-31822122b">BISWA</p>
     </footer>
     <!-- javascript -->
     <script src="app.js"></script>
