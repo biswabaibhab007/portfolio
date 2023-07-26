@@ -194,36 +194,43 @@ footer a{
 
 
 /* media qureies */
-@media only screen and (max-width:  1080px){
+@media only screen and (max-width:  1090px){
     /* body{
         background: url(images/about-asset.jpg);    
     }*/ 
+    *{
+        margin: 0;padding: 0;
+    }
+    body{
+        width: 100%;
+    }
     .container{
-        margin-top: 7rem;
+        align-items: center;
+        width: 146%;
+        margin: 0.5rem;
+        flex-direction: column;
     }        
     .greet{
-        font-size: 7.3rem;
+        font-size: 3.2rem;
     }
     .name{
-        margin-top: 4rem;
-        font-size: 4.8rem;
+        margin-top: 1rem;
+        font-size: 3rem;
     }
     .interest-text{
         margin: 2rem 0 5rem 0;
-        font-size: 2.5rem;
-    }
-    .container{
-        flex-direction: column;
+        font-size: 1.5rem;
     }
     .photo .disp-pic{
-        margin-top: 3rem;
-        width: 30rem;
+        margin-top: 2rem;
+        width: 25rem;
         border-radius: 100%;
     }
     .socials{
         justify-content: center;
     }
     .socials a{
-        font-size: 4rem;
+        font-size: 2rem;
     }
+    
 }
