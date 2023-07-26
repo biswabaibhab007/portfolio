@@ -67,16 +67,30 @@ img{
     padding: 3rem 3rem;
     border-radius: 2rem;
 }
-.photo .disp-pic{
+.photo .disp-pic{   
     width: 20rem;
     border-radius: 100%;
-}
-.photo :hover{
-    transition:  all 1s ease-in-out;
-    border: 0.6rem solid var(--accent-color);
-    box-sizing: border-box;
-}
+    animation-name: float;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}   
+    @keyframes float {
+        0% {
+            box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+            transform: translatey(0px);
+        }
+        50% {
+            box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+            transform: translatey(-20px);
+        }
+        100% {
+            box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+            transform: translatey(0px);
+        }
+    }
 .photo{
+    padding-top: 2rem;
     margin: auto;
 }
 .greet, .name{
@@ -93,7 +107,6 @@ img{
     transition: all 0.5s ease-in-out;   
 }
 
-
 /* Socials */
 .socials{
     gap: 2rem;
@@ -109,7 +122,6 @@ img{
     transition: all 0.4s ease;
     color: black;
 }
-
 
 /* About */
 .heading{
@@ -169,8 +181,9 @@ h4{
 }
 .skills-content :hover{
     background-color: var(--accent-color-light);
-    transform: scale(1.15);
+    /* transform: scale(1.1); */
     transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 0 black;
 }
 .skill-img{
     font-size: 3rem;
@@ -178,7 +191,6 @@ h4{
 .skill-name{
     font-size: 1rem;
 }
-/* skills */
 
 /* footer */
 footer{
