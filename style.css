@@ -12,7 +12,6 @@
 body{
     font-family: 'Lilita One', cursive;
     font-size: 2rem;
-    /* font-family: 'Poppins', sans-serif; */
     color: var(--primary-text-color);
     background:
     url(images/background.jpg)
@@ -41,19 +40,18 @@ img{
     color: var(--primary-text-color);
     font-size: 1rem;
     padding: 0 1rem;
-    /* border-radius: 0.5rem; */
     transition: all 0.3s ease;
 }
 .name{
     margin-bottom: 0.5rem;
     font-family: 'Marck Script', cursive;
 }
+.intereset-text{
+    font-size: 1.3rem;
+}
 .accent-blue{
     color: var(--accent-color);
 }
-
-
-/*  */
 .nav-container{
     justify-content: space-between;
     align-items: center;
@@ -61,24 +59,19 @@ img{
     padding: 0 1rem;
     
 }
+
 /* container */
 .container{
     backdrop-filter: blur(0.3rem);
-    /* background-color: var(--accent-color-light); */
     margin: 2rem 2.5rem;
     padding: 3rem 3rem;
     border-radius: 2rem;
-    /* box-shadow: -0.001rem 0.001rem 0.4rem 0.001rem white; */
 }
 .photo .disp-pic{
     width: 20rem;
-    /* box-shadow: 0.5rem 0.5rem 0.1rem var(--accent-color); */
     border-radius: 100%;
-    
 }
 .photo :hover{
-    /* box-shadow: -0.5rem 0.5rem 0.1rem var(--accent-color); */
-    /* transform: perspective(30rem) rotateX(0deg) rotateY(360deg) rotateZ(0deg); */
     transition:  all 1s ease-in-out;
     border: 0.6rem solid var(--accent-color);
     box-sizing: border-box;
@@ -90,7 +83,9 @@ img{
     margin: 1rem 0;
     visibility: hidden;
     transform: translateY(-10rem);
-
+}
+.name{
+    font-size: 3.2rem;
 }
 .text-visible{
     visibility: visible;
@@ -136,7 +131,7 @@ h4{
 .about-container p{
     font-size: 1.5rem;
     font-weight: 600;
-    font-family: 'Marck Script', cursive;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0 5rem;
     margin-bottom: 2rem;
 }
@@ -193,15 +188,29 @@ footer{
     color: var(--primary-text-color);
     background-color: var(--accent-color);
 }
+footer a{
+    text-decoration: none;
+}
 
-/*-------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*  media queries */
+
+/* media qureies */
 @media only screen and (max-width:  1080px){
     /* body{
         background: url(images/about-asset.jpg);    
-    }*/         
+    }*/ 
+    .container{
+        margin-top: 7rem;
+    }        
     .greet{
-        font-size: 6.3rem;
+        font-size: 7.3rem;
+    }
+    .name{
+        margin-top: 4rem;
+        font-size: 4.8rem;
+    }
+    .interest-text{
+        margin: 2rem 0 5rem 0;
+        font-size: 2.5rem;
     }
     .container{
         flex-direction: column;
@@ -211,5 +220,10 @@ footer{
         width: 30rem;
         border-radius: 100%;
     }
+    .socials{
+        justify-content: center;
+    }
+    .socials a{
+        font-size: 4rem;
+    }
 }
-
