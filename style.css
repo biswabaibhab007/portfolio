@@ -195,12 +195,11 @@ footer a{
 
 /* media qureies */
 @media only screen and (max-width:  1090px){
-    /* body{
-        background: url(images/about-asset.jpg);    
-    }*/ 
-    *{
-        margin: 0;padding: 0;
+    /* navbar */
+    nav{
+        width: 152%;
     }
+
     body{
         width: 100%;
     }
@@ -232,5 +231,19 @@ footer a{
     .socials a{
         font-size: 2rem;
     }
-    
+    /* ABout section */
+    .about-container{
+        background-color: rgb(215, 215, 215);
+        width: 152%;
+    }
+    .about-container .heading{
+        padding-top: 2rem;
+    }
+    .about-content{
+        padding: 0 0 2rem 0; 
+    }
+    /* Skills */
+    .skills-container{
+        width: 152%;
+    }
 }
