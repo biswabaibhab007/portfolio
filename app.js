@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded",()=>{
     intText.classList.add("text-visible");
 
 });
-
 window.setInterval(() => {
     intText.innerHTML = `<p>I'm into <span class="accent-blue">${arr[Math.floor(Math.random() * arr.length)]}</span></p>`;
 }, 1000);
